@@ -31,3 +31,7 @@ for(var i = 0; i < productos.length; i++){
   	computadores.push(productos[i]);
   }
 }
+
+var computadores = productos.filter(function(producto){
+	return producto.tipo === 'computador';
+});
